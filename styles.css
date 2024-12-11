@@ -91,7 +91,7 @@ body {
 .homepage-header .left-column p {
     color: var(--text-100, #4B4B4B);
     font-family: "Outfit", sans-serif;
-    font-size: 50px;
+    font-size: 48px;
     font-weight: 600;
     line-height: normal;
     max-width: 600px;
@@ -273,7 +273,6 @@ body {
     justify-content: center;
     align-items: center;
     padding: 40px 100px;
-    padding-bottom: 0;
     margin: 0 auto;
     background: var(--bg-100, #F3F1F8);
     max-width: 40%;
@@ -307,6 +306,119 @@ body {
     font-family: "Poppins", sans-serif;
     font-size: 18px;
     font-weight: 300;
+}
+
+.line {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    max-width: 40%;
+    height: 2px;
+    background: linear-gradient(270deg, #A4B1CD 0%, #E6E3F1 49.7%, #B5AAD5 100%);
+}
+
+.cw-project {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 60px 100px;
+    margin: 0 auto;
+    background: var(--bg-100, #F3F1F8);
+    max-width: 40%;
+    border-radius: 5px 5px 0px 0px;
+}
+
+.cw-project img {
+    max-width: 75%;
+}
+
+.cw-project .right-column {
+    max-width: 40%;
+}
+
+.bcm-project {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 60px 100px;
+    margin: 0 auto;
+    background: var(--bg-100, #F3F1F8);
+    max-width: 40%;
+    border-radius: 5px 5px 0px 0px;
+}
+
+.bcm-project img {
+    max-width: 75%;
+    float:right
+}
+
+.bcm-project .left-column {
+    max-width: 40%;
+}
+
+.ftc-casestudy {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 60px 100px;
+    margin: 0 auto;
+    background: var(--bg-100, #F3F1F8);
+    max-width: 40%;
+    border-radius: 5px 5px 0px 0px;
+}
+
+.ftc-casestudy img {
+    max-width: 75%;
+}
+
+.ftc-casestudy .right-column {
+    max-width: 40%;
+}
+
+.website-casestudy {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 60px 100px;
+    margin: 0 auto;
+    background: var(--bg-100, #F3F1F8);
+    max-width: 40%;
+    border-radius: 5px 5px 0px 0px;
+}
+
+.website-casestudy img {
+    max-width: 75%;
+    float:right
+}
+
+.website-casestudy .left-column {
+    max-width: 40%;
+}
+
+.cafe-casestudy {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 60px 100px;
+    margin: 0 auto;
+    background: var(--bg-100, #F3F1F8);
+    max-width: 40%;
+    border-radius: 5px 5px 0px 0px;
+}
+
+.cafe-casestudy img {
+    max-width: 75%;
+}
+
+.cafe-casestudy .right-column {
+    max-width: 40%;
 }
 
 /* Responsive Design */
@@ -385,6 +497,30 @@ body {
     .portfolio-header p {
         font-size: 16px;
         font-weight: 400;
+    }
+
+    .line {
+        max-width: 70%;
+    }
+
+    .cw-project {
+        max-width: 70%;
+    }
+
+    .bcm-project {
+        max-width: 70%;
+    }
+
+    .ftc-casestudy {
+        max-width: 70%;
+    }
+
+    .website-casestudy {
+        max-width: 70%;
+    }
+
+    .cafe-casestudy {
+        max-width: 70%;
     }
 }
 
