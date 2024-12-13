@@ -171,6 +171,7 @@ body {
     text-decoration: none;
     position: relative;
     border: 2px solid var(--primary-100, #8472B9);
+    font-family: "Poppins", sans-serif;
 }
 
 .btn-light:hover {
@@ -191,6 +192,7 @@ body {
     position: relative;
     background: var(--primary-100, #8472B9);
     border: 2px solid var(--primary-100, #8472B9);
+    font-family: "Poppins", sans-serif;
 }
 
 .btn-dark:hover {
@@ -205,7 +207,7 @@ body {
     flex-direction: row;
     justify-content: left;
     align-items: center;
-    padding: 40px 100px;
+    padding: 20px 100px;
     margin: 0 auto;
     background: var(--bg-100, #F3F1F8);
     max-width: 58%;
@@ -235,9 +237,8 @@ body {
 /* responsive display */
 
  .resizable-container {
-    /* position: absolute; */
-    width: 80%;
-    height: 1000px;
+    width: 100%;
+    height: 800px;
     border: 2px solid var(--primary-100, #8472B9);
     box-shadow: 0 4px 10px rgba(0,0,0,0.3);
     resize: both;
@@ -325,6 +326,29 @@ body {
 .about-section .right-column img {
     max-height: 600px;
 }
+
+.contact-form {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    background-color: var(--bg-100, #F3F1F8);
+}
+
+.notification {
+    position: fixed;
+    top: -50px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #ad5ea7;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease-in-out;
+    z-index: 1000;
+  }
 
 /* portfolio page */
 

@@ -42,5 +42,36 @@
         </div>
       </div>
     </div>
+
+    <div class="contact-form">
+      <h1>Contact Me</h1>
+      <div class="left-column">
+        <h2>Email</h2>
+        <p>Send me an Email at:</p>
+        <a href="#">LeahHendricks99@gmail.com</a>
+        <button
+          onclick="copyToClipboard('leahhendricks99@gmail.com')"
+          class="btn-light"
+        >
+          Copy Email
+        </button>
+      </div>
+      <div class="right-column">
+        <form
+          action="mailto:leahhendricks99@gmail.com"
+          method="POST"
+          enctype="text/plain"
+        >
+          <label for="name">Your Name:</label>
+          <input type="text" id="name" name="name" required />
+          <label for="email">Your Email:</label>
+          <input type="email" id="email" name="email" required />
+          <label for="message">Your Message:</label>
+          <textarea id="message" name="message" rows="4" required></textarea>
+          <button type="submit">Send Email</button>
+        </form>
+      </div>
+    </div>
+    <script src="script.js"></script>
   </body>
 </html>
