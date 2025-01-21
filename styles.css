@@ -612,6 +612,83 @@ body {
     max-width: 40%;
 }
 
+/* capitalworx */
+
+.cwbackground-box {
+    padding: 40px 100px;
+    background: var(--bg-400, #FCEDE6);
+}
+
+.cw-description {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.cw-description .left-column {
+    flex: 1;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.cw-description .text-box {
+    max-width: 590px;
+    /* background-color: var(--bg-100, #F3F1F8); */
+    padding: 20px;
+    max-height: 600px;
+    border-radius: 5px;
+}
+
+.cw-description .left-column h1 {
+    color: var(--text-100, #4B4B4B);
+    font-family: "Outfit", sans-serif;
+    font-size: 56px;
+    font-weight: 600;
+    line-height: normal;
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+.cw-description .left-column h2 {
+    color: var(--text-100, #4B4B4B);
+    font-family: "Outfit", sans-serif;
+    font-size: 26px;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.cw-description .left-column p {
+    color: var(--primary-400, #FC5306);
+    font-family: "Poppins", sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.cw-description .right-column {
+    flex: 1;
+    display: flex;
+    justify-content: left;
+}
+
+.cw-description .right-column img {
+    max-height: 600px;
+}
+
+.cwdisplay {
+    background: var(--bg-400, #FCEDE6);
+    display: flex;
+    justify-content: center;
+    padding: 30px;
+}
+
+.cwdisplay img{
+    max-width: 50%;
+}
+
 /* footer */
 
 footer {
@@ -745,6 +822,29 @@ footer img {
 
     .cafe-casestudy {
         max-width: 70%;
+    }
+
+    .cw-description .right-column img {
+        max-height: 500px;
+    }
+
+    .cw-description .text-box {
+        max-width: 400px;
+    }
+
+    .cw-description .left-column h1 {
+        font-size: 45px;
+        font-weight: 600;
+    }
+    
+    .cw-description .left-column h2 {
+        font-size: 22px;
+        font-weight: 600;
+    }
+    
+    .cw-description .left-column p {
+        font-size: 16px;
+        font-weight: 400;
     }
 }
 
