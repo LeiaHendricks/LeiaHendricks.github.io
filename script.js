@@ -53,10 +53,10 @@ function changeNavbarColorByTitle() {
   // Define colors for different page titles
   const colorMap = {
       'CapitalWorx': '#FCEDE6',
-      'BCM Toolkit': '#E7F0F8',
+      'BCM Toolkit': '#F0F2F7',
       'FreeTherapy Casestudy': '#F0F2F7',
-      'LocalCafe website Casestudy': '#F9F7F4',
-      'LocalCafe Casestudy': '#F9F7F4'
+      'LocalCafe website Casestudy': '#F3EDE9',
+      'LocalCafe Casestudy': '#F3EDE9'
   };
 
   // Get the color for the current title or default to a fallback color
