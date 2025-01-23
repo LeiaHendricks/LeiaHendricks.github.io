@@ -54,7 +54,7 @@ function changeNavbarColorByTitle() {
   const colorMap = {
       'CapitalWorx': '#FCEDE6',
       'BCM Toolkit': '#F0F2F7',
-      'FreeTherapy Casestudy': '#F0F2F7',
+      'FreeTherapy Casestudy': '#E1E5EE',
       'LocalCafe website Casestudy': '#F3EDE9',
       'LocalCafe Casestudy': '#F3EDE9'
   };
