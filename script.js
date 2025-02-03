@@ -69,3 +69,31 @@ function changeNavbarColorByTitle() {
 // Call the function when the DOM content is fully loaded
 document.addEventListener('DOMContentLoaded', changeNavbarColorByTitle);
 
+
+// Function to change the body background color based on the page title
+function changeBodyColorByTitle() {
+  
+  const pageTitle = document.title;
+
+  const body = document.body;
+
+  if (!body) {
+      console.error('Body element not found!');
+      return;
+  }
+
+  const colorMap = {
+      'CapitalWorx': '#FCEDE6',
+      'BCM Toolkit': '#F0F2F7',
+      'FreeTherapy Casestudy': '#E1E5EE',
+      'LocalCafe website Casestudy': '#F3EDE9',
+      'LocalCafe Casestudy': '#F3EDE9',
+      'My site': '#eae8ef'
+  };
+  
+  const newColor = colorMap[pageTitle] || '#F3F1F8';
+  
+  body.style.backgroundColor = newColor;
+}
+
+document.addEventListener('DOMContentLoaded', changeBodyColorByTitle);
