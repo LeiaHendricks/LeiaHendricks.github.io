@@ -618,7 +618,7 @@ body {
     justify-content: center;
     align-items: center;
     margin: 0 auto;
-    padding: 20px;
+    padding: 80px 20px;
 }
 
 .cw-description .left-column {
@@ -632,7 +632,6 @@ body {
     max-width: 590px;
     /* background-color: var(--bg-100, #F3F1F8); */
     padding: 20px;
-    max-height: 600px;
     border-radius: 5px;
 }
 
@@ -693,7 +692,7 @@ body {
     justify-content: center;
     align-items: center;
     margin: 0 auto;
-    padding: 20px;
+    padding: 80px 20px;
 }
 
 .bcm-description .left-column {
@@ -704,10 +703,7 @@ body {
 }
 
 .bcm-description .text-box {
-    max-width: 590px;
-    padding: 20px;
-    max-height: 600px;
-    border-radius: 5px;
+    max-width: 85%;
 }
 
 .bcm-description .left-column h1 {
