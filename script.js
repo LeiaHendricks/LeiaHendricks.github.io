@@ -53,10 +53,10 @@ function changeNavbarColorByTitle() {
   // Define colors for different page titles
   const colorMap = {
       'CapitalWorx': '#FCEDE6',
-      'BCM Toolkit': '#CDE0EF',
-      'FreeTherapy Casestudy': '#E1E5EE',
-      'LocalCafe website Casestudy': '#F3EDE9',
-      'LocalCafe Casestudy': '#F3EDE9'
+      'BCM Toolkit': '#E7F0F8',
+      'FreeTherapy Casestudy': '#F0F2F7',
+      'LocalCafe website Casestudy': '#F9F7F4',
+      'LocalCafe Casestudy': '#F9F7F4'
   };
 
   // Get the color for the current title or default to a fallback color
@@ -68,6 +68,47 @@ function changeNavbarColorByTitle() {
 
 // Call the function when the DOM content is fully loaded
 document.addEventListener('DOMContentLoaded', changeNavbarColorByTitle);
+
+
+
+
+// Function to change the navbar link colors based on the page title
+function changeColorsByTitle() {
+  // Get the current page title
+  const pageTitle = document.title;
+
+  // Select all navbar links
+  const navLinks = document.querySelectorAll('.navbar a');
+
+  // Define colors for different page titles
+  const colorMap = {
+      'CapitalWorx': { text: '#FC5306', hover: '#F8DACD' },
+      'BCM Toolkit': { text: '#0662B0', hover: '#CDE0EF' },
+      'FreeTherapy Casestudy': { text: '#687DAC', hover: '#E1E5EE' },
+      'LocalCafe website Casestudy': { text: '#C2A790', hover: '#F3EDE9' },
+      'LocalCafe Casestudy': { text: '#C2A790', hover: '#F3EDE9' }
+  };
+
+  // Get the color scheme for the current title or default to a fallback color
+  const colors = colorMap[pageTitle] || { text: '#8472B9', hover: '#E6E3F1' };
+
+  // Apply the new text and hover colors to the navbar links
+  navLinks.forEach(link => {
+      link.style.color = colors.text;
+      link.addEventListener('mouseover', () => {
+          link.style.backgroundColor = colors.hover;
+      });
+      link.addEventListener('mouseout', () => {
+          link.style.backgroundColor = 'transparent';
+      });
+  });
+}
+
+// Call the function when the DOM content is fully loaded
+document.addEventListener('DOMContentLoaded', changeColorsByTitle);
+
+
+
 
 
 // Function to change the body background color based on the page title
@@ -84,10 +125,10 @@ function changeBodyColorByTitle() {
 
   const colorMap = {
       'CapitalWorx': '#FCEDE6',
-      'BCM Toolkit': '#CDE0EF',
-      'FreeTherapy Casestudy': '#E1E5EE',
-      'LocalCafe website Casestudy': '#F3EDE9',
-      'LocalCafe Casestudy': '#F3EDE9',
+      'BCM Toolkit': '#E7F0F8',
+      'FreeTherapy Casestudy': '#F0F2F7',
+      'LocalCafe website Casestudy': '#F9F7F4',
+      'LocalCafe Casestudy': '#F9F7F4',
       'My site': '#eae8ef'
   };
   
@@ -113,10 +154,10 @@ function changeFooterColorByTitle() {
 
   const colorMap = {
       'CapitalWorx': '#F8DACD',
-      'BCM Toolkit': '#E7F0F8',
-      'FreeTherapy Casestudy': '#F0F2F7',
-      'LocalCafe website Casestudy': '#F9F7F4',
-      'LocalCafe Casestudy': '#F9F7F4'
+      'BCM Toolkit': '#CDE0EF',
+      'FreeTherapy Casestudy': '#E1E5EE',
+      'LocalCafe website Casestudy': '#F3EDE9',
+      'LocalCafe Casestudy': '#F3EDE9'
   };
 
   const newColor = colorMap[pageTitle] || ' #F3F1F8';

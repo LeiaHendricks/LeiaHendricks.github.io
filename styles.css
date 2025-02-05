@@ -762,7 +762,6 @@ body {
     align-items: center;
     margin: 0 auto;
     padding: 50px;
-    background: var(--bg-250, #F3EDE9);
 }
 
 .cafeheader .left-column {
@@ -803,7 +802,6 @@ body {
     justify-content: center;
     align-items: center;
     margin: 0 auto;
-    background: var(--bg-250, #F3EDE9);
 }
 
 .cafedescription .left-column {
@@ -832,10 +830,6 @@ body {
     font-family: "Poppins", sans-serif;
     font-size: 16px;
     font-weight: 500;
-}
-
-.caferoles {
-    background: var(--bg-250, #F3EDE9);
 }
 
 .caferoles .cafecolumns {
@@ -883,7 +877,7 @@ body {
 }
 
 .cafedisplay {
-    background: radial-gradient(50% 50% at 50% 50%, var(--primary-200, #C2A790) 0%, var(--bg-250, #F3EDE9) 80%);
+    background: radial-gradient(50% 50% at 50% 50%, var(--primary-200, #C2A790) 0%, var(--bg-200, #F9F7F4) 80%);
     display: flex;
     justify-content: center;
     padding: 50px 0;
@@ -966,7 +960,6 @@ body {
     justify-content: center;
     align-items: center;
     margin: 0 auto;
-    background: var(--bg-250, #F3EDE9);
     width: 80%;
 }
 
@@ -1011,7 +1004,6 @@ body {
     justify-content: space-between;
     align-items: center;
     margin: 0 auto;
-    background: var(--bg-250, #F3EDE9);
     padding-top: 20px;
     width: 80%;
 }
@@ -1058,7 +1050,6 @@ body {
     justify-content: space-between;
     align-items: center;
     margin: 0 auto;
-    background: var(--bg-250, #F3EDE9);
     padding-top: 20px;
     width: 80%;
 }
@@ -1106,7 +1097,6 @@ body {
     align-items: center;
     margin: 0 auto;
     padding: 50px;
-    background: var(--bg-250, #F3EDE9);
     width: 80%;
 }
 
@@ -1170,7 +1160,6 @@ body {
     flex-direction: column;
     justify-content: left;
     margin: 0 auto;
-    background: var(--bg-250, #F3EDE9);
     padding-top: 20px;
     width: 80%;
 }
@@ -1294,7 +1283,6 @@ body {
     align-items: center;
     margin: 0 auto;
     padding: 50px;
-    background: var(--bg-250, #F3EDE9);
 }
 
 .webheader .left-column {
@@ -1335,7 +1323,6 @@ body {
     justify-content: center;
     align-items: center;
     margin: 0 auto;
-    background: var(--bg-250, #F3EDE9);
 }
 
 .webdescription .left-column {
@@ -1364,10 +1351,6 @@ body {
     font-family: "Poppins", sans-serif;
     font-size: 16px;
     font-weight: 500;
-}
-
-.webroles {
-    background: var(--bg-250, #F3EDE9);
 }
 
 .webroles .webcolumns {
@@ -1415,14 +1398,14 @@ body {
 }
 
 .webdisplay1 {
-    background: var(--bg-250, #F3EDE9);
+    background: radial-gradient(50% 50% at 50% 50%, var(--primary-200, #C2A790) 0%, var(--bg-200, #F9F7F4) 80%);
     display: flex;
     justify-content: center;
     padding: 30px 0;
 }
 
 .webdisplay2 {
-    background: var(--bg-250, #F3EDE9);
+    background: radial-gradient(50% 50% at 50% 50%, var(--primary-200, #C2A790) 0%, var(--bg-200, #F9F7F4) 80%);
     display: flex;
     justify-content: center;
     padding: 30px 0;
@@ -1438,7 +1421,6 @@ body {
 
 .webpainpoints {
     display: flex;
-    background: var(--bg-250, #F3EDE9);
     justify-content: center;
     margin: 0 auto;
     width: 80%;
@@ -1510,7 +1492,6 @@ body {
     justify-content: center;
     align-items: center;
     margin: 0 auto;
-    background: var(--bg-250, #F3EDE9);
     width: 80%;
 }
 
@@ -1555,7 +1536,6 @@ body {
     justify-content: space-between;
     align-items: center;
     margin: 0 auto;
-    background: var(--bg-250, #F3EDE9);
     padding-top: 20px;
     width: 80%;
 }
@@ -1602,7 +1582,6 @@ body {
     justify-content: space-between;
     align-items: center;
     margin: 0 auto;
-    background: var(--bg-250, #F3EDE9);
     padding-top: 20px;
     width: 80%;
 }
@@ -1648,7 +1627,6 @@ body {
     justify-content: space-between;
     align-items: center;
     margin: 0 auto;
-    background: var(--bg-250, #F3EDE9);
     padding-top: 20px;
     width: 80%;
 }
@@ -1696,7 +1674,6 @@ body {
     align-items: center;
     margin: 0 auto;
     padding: 50px;
-    background: var(--bg-250, #F3EDE9);
     width: 80%;
 }
 
@@ -1760,7 +1737,6 @@ body {
     flex-direction: column;
     justify-content: left;
     margin: 0 auto;
-    background: var(--bg-250, #F3EDE9);
     width: 80%;
 }
 
@@ -1877,10 +1853,6 @@ body {
     font-weight: 500;
 }
 
-/* .ftcroles {
-    background: var(--bg-350, #E1E5EE);
-} */
-
 .ftccolumns {
     display: flex;
     flex-direction: row;
@@ -1921,14 +1893,14 @@ body {
 }
 
 .ftcdisplay1 {
-    background: radial-gradient(50% 50% at 50% 50%, var(--primary-300, #687DAC) 0%, var(--bg-350, #E1E5EE) 80%);
+    background: radial-gradient(50% 50% at 50% 50%, var(--primary-300, #687DAC) 0%, var(--bg-300, #F0F2F7) 80%);
     display: flex;
     justify-content: center;
     padding: 30px 0;
 }
 
 .ftcdisplay2 {
-    background: radial-gradient(50% 50% at 50% 50%, var(--primary-300, #687DAC) 0%, var(--bg-350, #E1E5EE) 80%);
+    background: radial-gradient(50% 50% at 50% 50%, var(--primary-300, #687DAC) 0%, var(--bg-300, #F0F2F7) 80%);
     display: flex;
     justify-content: center;
     padding: 30px 0;
