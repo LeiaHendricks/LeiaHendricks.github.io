@@ -105,27 +105,20 @@ body {
 
 .homepage-header .right-column {
     flex: 1;
-    padding: 20px;
-    padding-right: 150px;
-    padding-bottom: 0;
     display: flex;
     justify-content: center;
 }
 
 .homepage-header .right-column img {
-    max-width: 600px;
-    height: auto;
+    max-width: 60%;
 }
 
 .view-portfolio {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
-    padding: 40px 100px;
     margin: 0 auto;
-    /* background-color: var(--bg-100, #F3F1F8); */
-    background-color: #eae8ef;
 }
 
 .view-portfolio .left-column {
@@ -136,8 +129,7 @@ body {
 }
 
 .view-portfolio .left-column img {
-    max-width: 726px;
-    height: auto;
+    max-width: 80%;
 }
 
 .view-portfolio .right-column {
@@ -620,17 +612,13 @@ body {
 
 /* capitalworx */
 
-.cwbackground-box {
-    padding: 100px;
-    background: var(--bg-400, #FCEDE6);
-}
-
 .cw-description {
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
     margin: 0 auto;
+    padding: 20px;
 }
 
 .cw-description .left-column {
@@ -693,15 +681,11 @@ body {
 }
 
 .cwdisplay img{
-    max-width: 50%;
+    max-width: 100%;
 }
 
 /* bcm toolkit */
 
-.bcmbackground-box {
-    padding: 100px;
-    background: var(--bg-300, #F0F2F7);
-}
 
 .bcm-description {
     display: flex;
@@ -709,6 +693,7 @@ body {
     justify-content: center;
     align-items: center;
     margin: 0 auto;
+    padding: 20px;
 }
 
 .bcm-description .left-column {
@@ -720,7 +705,6 @@ body {
 
 .bcm-description .text-box {
     max-width: 590px;
-    /* background-color: var(--bg-100, #F3F1F8); */
     padding: 20px;
     max-height: 600px;
     border-radius: 5px;
@@ -764,14 +748,13 @@ body {
 }
 
 .bcmdisplay {
-    background: var(--bg-300, #F0F2F7);
     display: flex;
     justify-content: center;
     padding: 30px;
 }
 
 .bcmdisplay img{
-    max-width: 50%;
+    max-width: 100%;
 }
 
 /* local cafe */
@@ -907,6 +890,7 @@ body {
     background: radial-gradient(50% 50% at 50% 50%, var(--primary-200, #C2A790) 0%, var(--bg-250, #F3EDE9) 80%);
     display: flex;
     justify-content: center;
+    padding: 50px 0;
 }
 
 .cafedisplay img{
@@ -915,10 +899,10 @@ body {
 
 .cafepainpoints {
     display: flex;
-    background: var(--bg-250, #F3EDE9);
     justify-content: center;
     margin: 0 auto;
     width: 80%;
+    flex-direction: column;
 }
 
 .cafepainpoints .cafecolumns {
@@ -927,7 +911,6 @@ body {
     justify-content: center;
     align-items: center;
     margin: 0 auto;
-    padding: 100px 0;
 }
 
 .cafepainpoints .column1 {
@@ -947,11 +930,26 @@ body {
 }
 
 .cafepainpoints .text-box {
-    padding: 0 25px;
+    padding: 0 10px;
     min-height: 200px;
-  }
+}
+
+.cafepainpoints .column1 .text-box {
+    padding-left: 0;
+}
+
+.cafepainpoints .column4 .text-box {
+    padding-right: 0;
+}
 
 .cafepainpoints h2 {
+    color: var(--text-100, #4B4B4B);
+    font-family: "Outfit", sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+} 
+
+.cafepainpoints .cafecolumns h2 {
     color: var(--text-100, #4B4B4B);
     font-family: "Outfit", sans-serif;
     font-size: 22px;
@@ -1205,7 +1203,7 @@ body {
 
 .cafeusability .text-box {
     max-width: 50%;
-  }
+}
 
 .cafeusability .usabilitycolumns {
     display: flex;
@@ -1228,6 +1226,67 @@ body {
 .usabilitycolumns .column3 {
     width: 33%;
     padding: 50px;
+}
+
+.cafemockup {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    margin: 0 auto;
+    padding-top: 20px;
+    width: 80%;
+}
+
+.cafemockup .left-column {
+    flex: 1;
+    display: flex;
+    justify-content: right;
+    flex-direction: column;
+}
+
+.cafemockup .right-column {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.cafemockup .right-column .headings{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    margin: 0 auto;
+}
+
+.cafemockup  h2 {
+    color: var(--text-100, #4B4B4B);
+    font-family: "Outfit", sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+}
+
+.cafemockup  p {
+    color: var(--primary-200, #C2A790);
+    font-family: "Poppins", sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.cafemockup .right-column .headings h2 {
+    padding: 0 100px;
+}
+
+.cafemockup img {
+    max-width: 60%;
+    margin: 0 auto;
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.cafemockup .text-box {
+    max-width: 50%;
 }
 
 /* local cafe website */
@@ -1363,14 +1422,14 @@ body {
     background: var(--bg-250, #F3EDE9);
     display: flex;
     justify-content: center;
-    padding: 30px;
+    padding: 30px 0;
 }
 
 .webdisplay2 {
     background: var(--bg-250, #F3EDE9);
     display: flex;
     justify-content: center;
-    padding: 30px;
+    padding: 30px 0;
 }
 
 .webdisplay1 img{
@@ -1387,6 +1446,7 @@ body {
     justify-content: center;
     margin: 0 auto;
     width: 80%;
+    flex-direction: column;
 }
 
 .webpainpoints .webcolumns {
@@ -1395,7 +1455,6 @@ body {
     justify-content: center;
     align-items: center;
     margin: 0 auto;
-    padding: 100px 0;
 }
 
 .webpainpoints .column1 {
@@ -1415,11 +1474,26 @@ body {
 }
 
 .webpainpoints .text-box {
-    padding: 0 25px;
+    padding: 0 10px;
     min-height: 200px;
-  }
+}
+
+.webpainpoints .column1 .text-box {
+    padding-left: 0;
+}
+
+.webpainpoints .column4 .text-box {
+    padding-right: 0;
+}
 
 .webpainpoints h2 {
+    color: var(--text-100, #4B4B4B);
+    font-family: "Outfit", sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+}
+
+.webpainpoints .webcolumns h2 {
     color: var(--text-100, #4B4B4B);
     font-family: "Outfit", sans-serif;
     font-size: 22px;
@@ -1737,7 +1811,6 @@ body {
     align-items: center;
     margin: 0 auto;
     padding: 50px;
-    background: var(--bg-350, #E1E5EE);
 }
 
 .ftcheader .left-column {
@@ -1778,7 +1851,6 @@ body {
     justify-content: center;
     align-items: center;
     margin: 0 auto;
-    background: var(--bg-350, #E1E5EE);
 }
 
 .ftcdescription .left-column {
@@ -1809,9 +1881,9 @@ body {
     font-weight: 500;
 }
 
-.ftcroles {
+/* .ftcroles {
     background: var(--bg-350, #E1E5EE);
-}
+} */
 
 .ftccolumns {
     display: flex;
@@ -1856,14 +1928,14 @@ body {
     background: radial-gradient(50% 50% at 50% 50%, var(--primary-300, #687DAC) 0%, var(--bg-350, #E1E5EE) 80%);
     display: flex;
     justify-content: center;
-    padding: 30px;
+    padding: 30px 0;
 }
 
 .ftcdisplay2 {
     background: radial-gradient(50% 50% at 50% 50%, var(--primary-300, #687DAC) 0%, var(--bg-350, #E1E5EE) 80%);
     display: flex;
     justify-content: center;
-    padding: 30px;
+    padding: 30px 0;
 }
 
 .ftcdisplay1 img{
@@ -1876,10 +1948,10 @@ body {
 
 .ftcpainpoints {
     display: flex;
-    background: var(--bg-350, #E1E5EE);
     justify-content: center;
     margin: 0 auto;
     width: 80%;
+    flex-direction: column;
 }
 
 .ftcpainpoints .ftccolumns {
@@ -1888,7 +1960,6 @@ body {
     justify-content: center;
     align-items: center;
     margin: 0 auto;
-    padding: 100px 0;
 }
 
 .ftcpainpoints .column1 {
@@ -1908,11 +1979,26 @@ body {
 }
 
 .ftcpainpoints .text-box {
-    padding: 0 25px;
+    padding: 0 10px;
     min-height: 200px;
-  }
+}
+
+.ftcpainpoints .column1 .text-box {
+    padding-left: 0;
+}
+
+.ftcpainpoints .column3 .text-box {
+    padding-right: 0;
+}
 
 .ftcpainpoints h2 {
+    color: var(--text-100, #4B4B4B);
+    font-family: "Outfit", sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+}
+
+.ftcpainpoints .ftccolumns h2 {
     color: var(--text-100, #4B4B4B);
     font-family: "Outfit", sans-serif;
     font-size: 22px;
@@ -1933,7 +2019,6 @@ body {
     justify-content: center;
     align-items: center;
     margin: 0 auto;
-    background: var(--bg-350, #E1E5EE);
     width: 80%;
 }
 
@@ -1978,7 +2063,6 @@ body {
     justify-content: space-between;
     align-items: center;
     margin: 0 auto;
-    background: var(--bg-350, #E1E5EE);
     padding-top: 20px;
     width: 80%;
 }
@@ -2025,7 +2109,6 @@ body {
     justify-content: space-between;
     align-items: center;
     margin: 0 auto;
-    background: var(--bg-350, #E1E5EE);
     padding-top: 20px;
     width: 80%;
 }
@@ -2073,7 +2156,6 @@ body {
     align-items: center;
     margin: 0 auto;
     padding: 50px;
-    background: var(--bg-350, #E1E5EE);
     width: 80%;
 }
 
@@ -2137,7 +2219,6 @@ body {
     flex-direction: column;
     justify-content: left;
     margin: 0 auto;
-    background: var(--bg-350, #E1E5EE);
     padding-top: 20px;
     width: 80%;
 }
@@ -2260,10 +2341,6 @@ footer img {
         font-size: 16px;
     }
 
-    .bcmdisplay img{
-        max-width: 70%;
-    }
-
     .cw-description .left-column h1 {
         font-size: 50px;
     }
@@ -2274,10 +2351,6 @@ footer img {
     
     .cw-description .left-column p {
         font-size: 16px;
-    }
-
-    .cwdisplay img{
-        max-width: 70%;
     }
 
     .cafeheader .right-column img {
@@ -2316,13 +2389,23 @@ footer img {
     }
 
     .view-portfolio .right-column h1 {
-        font-size: 45px;
+        color: var(--text-100, #4B4B4B);
+        font-family: "Outfit", sans-serif;
+        font-size: 35px;
         font-weight: 600;
     }
 
     .view-portfolio .right-column p {
         font-size: 16px;
         font-weight: 400;
+    }
+
+    .homepage-header .right-column img {
+        max-width: 80%;
+    }
+
+    .view-portfolio .left-column img {
+        max-width: 90%;
     }
 
     .about-section .right-column img {
@@ -2390,6 +2473,10 @@ footer img {
         max-width: 70%;
     }
 
+    .cw-description{
+        padding: 80px 20px;
+    }
+
     .cw-description .right-column img {
         max-height: 500px;
     }
@@ -2412,6 +2499,31 @@ footer img {
         font-size: 16px;
         font-weight: 400;
     }
+
+    .bcm-description .left-column h1 {
+        font-size: 35px;
+    }
+    
+    .bcm-description .left-column h2 {
+        font-size: 24px;
+    }
+    
+    .bcm-description .left-column p {
+        font-size: 16px;
+    }
+
+    .cw-description .left-column h1 {
+        font-size: 35px;
+    }
+    
+    .cw-description .left-column h2 {
+        font-size: 24px;
+    }
+    
+    .cw-description .left-column p {
+        font-size: 16px;
+    }
+
 
 }
 

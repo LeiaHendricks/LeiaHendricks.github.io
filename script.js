@@ -53,7 +53,7 @@ function changeNavbarColorByTitle() {
   // Define colors for different page titles
   const colorMap = {
       'CapitalWorx': '#FCEDE6',
-      'BCM Toolkit': '#F0F2F7',
+      'BCM Toolkit': '#CDE0EF',
       'FreeTherapy Casestudy': '#E1E5EE',
       'LocalCafe website Casestudy': '#F3EDE9',
       'LocalCafe Casestudy': '#F3EDE9'
@@ -84,7 +84,7 @@ function changeBodyColorByTitle() {
 
   const colorMap = {
       'CapitalWorx': '#FCEDE6',
-      'BCM Toolkit': '#F0F2F7',
+      'BCM Toolkit': '#CDE0EF',
       'FreeTherapy Casestudy': '#E1E5EE',
       'LocalCafe website Casestudy': '#F3EDE9',
       'LocalCafe Casestudy': '#F3EDE9',
@@ -97,3 +97,31 @@ function changeBodyColorByTitle() {
 }
 
 document.addEventListener('DOMContentLoaded', changeBodyColorByTitle);
+
+
+// Function to change the footer color based on the page title
+function changeFooterColorByTitle() {
+  
+  const pageTitle = document.title;
+
+  const footer = document.querySelector('footer');
+
+  if (!footer) {
+      console.error('Footer element not found! Make sure the selector is correct.');
+      return;
+  }
+
+  const colorMap = {
+      'CapitalWorx': '#F8DACD',
+      'BCM Toolkit': '#E7F0F8',
+      'FreeTherapy Casestudy': '#F0F2F7',
+      'LocalCafe website Casestudy': '#F9F7F4',
+      'LocalCafe Casestudy': '#F9F7F4'
+  };
+
+  const newColor = colorMap[pageTitle] || ' #F3F1F8';
+
+  footer.style.backgroundColor = newColor;
+}
+
+document.addEventListener('DOMContentLoaded', changeFooterColorByTitle);
