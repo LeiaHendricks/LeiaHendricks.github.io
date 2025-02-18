@@ -166,3 +166,32 @@ function changeFooterColorByTitle() {
 }
 
 document.addEventListener('DOMContentLoaded', changeFooterColorByTitle);
+
+
+// faq section
+
+document.querySelectorAll(".faq-question").forEach(question => {
+  question.addEventListener("click", () => {
+      const faqItem = question.parentElement;
+      faqItem.classList.toggle("open");
+
+      const answer = faqItem.querySelector(".faq-answer");
+
+      if (faqItem.classList.contains("open")) {
+          answer.style.maxHeight = answer.scrollHeight + "px";
+      } else {
+          answer.style.maxHeight = "0";
+      }
+  });
+});
+
+
+// parallax
+
+window.addEventListener("scroll", function() {
+  document.querySelectorAll(".parallax-img").forEach((img) => {
+    let speed = img.parentElement.getAttribute("data-speed") || 0.3;
+    let scrollPosition = window.scrollY * speed * 0.3; // Adjust speed
+    img.style.transform = `translate(-50%, calc(-50% + ${scrollPosition}px))`;
+  });
+});

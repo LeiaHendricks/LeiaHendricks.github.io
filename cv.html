@@ -5,6 +5,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>My CV</title>
     <link rel="stylesheet" href="styles.css" />
+
+    <style>
+      body,
+      html {
+        margin: 0;
+        padding: 0;
+        overflow-x: hidden;
+        font-family: Arial, sans-serif;
+      }
+
+      .parallax {
+        position: relative;
+        width: 100%;
+        height: 100vh;
+        background-image: url("images/ftc-compare2mu.png"); /* Replace with your image */
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+      }
+
+      .content {
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 1.5rem;
+        background-color: white;
+      }
+    </style>
   </head>
   <body>
     <div class="navbar">
@@ -13,5 +43,19 @@
       <a href="contact.html">Contact</a>
       <a href="portfolio.html">Portfolio</a>
     </div>
+
+    <div class="parallax"></div>
+    <div class="content">Scroll down for the parallax effect</div>
+    <div class="parallax"></div>
+    <div class="content">More content here</div>
+
+    <script>
+      window.addEventListener("scroll", function () {
+        document.querySelectorAll(".parallax").forEach((parallax) => {
+          let scrollPosition = window.scrollY;
+          parallax.style.backgroundPositionY = scrollPosition * 0.5 + "px"; // Adjust speed with multiplier
+        });
+      });
+    </script>
   </body>
 </html>
