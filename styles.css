@@ -93,7 +93,7 @@ body {
     justify-content: center;
 }
 
-.homepage-header .left-column p {
+.homepage-header .left-column h1 {
     color: var(--text-100, #4B4B4B);
     font-family: "Outfit", sans-serif;
     font-size: 48px;
@@ -3243,15 +3243,32 @@ footer img {
         max-width: 70%;
     }
 
+    .ftcmockup2 .right-column img {
+        height: auto;
+        width: 100%;
+    }
+
 }
 
 @media (max-width: 1400px) {
+
+    .width-helper {
+        max-width: 95%;
+    }
+
+    h2 {
+        font-size: 22px !important;
+    } 
+    
+    p {
+        font-size: 14px !important;
+    }
 
     .homepage-header .left-column {
         justify-content: center;
     }
    
-    .homepage-header .left-column p {
+    .homepage-header .left-column h1 {
         color: var(--text-100, #4B4B4B);
         font-family: "Outfit", sans-serif;
         font-size: 35px;
@@ -3404,6 +3421,35 @@ footer img {
     
     .cw-description .left-column p {
         font-size: 16px;
+    }
+    
+    .cafepainpoints p {
+        min-width: 210px;
+    }
+
+    .webpainpoints p {
+        min-width: 210px;
+    }
+
+    .ftcmockup2 .right-column img {
+        height: auto;
+        width: 100%;
+    }
+
+    .ftcmockup .right-column img {
+        height: 600px;
+    }
+
+    .cafeusability li {
+        font-size: 14px;
+    }
+
+    .webusability li {
+        font-size: 14px;
+    }
+
+    .ftcusability li {
+        font-size: 14px;
     }
 
 
